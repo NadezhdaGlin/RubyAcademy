@@ -71,4 +71,3 @@ else !flag
 	BALANCE = 100.0
 	ATM(BALANCE)
 end
-
