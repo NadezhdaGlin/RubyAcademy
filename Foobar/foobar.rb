@@ -1,8 +1,4 @@
 def foobar
-
-	# firstnum = gets.chomp.to_i
-	# secondnum = gets.chomp.to_i
-
 	firstnum = gets.chomp.to_f
 	secondnum = gets.chomp.to_f
 
@@ -13,9 +9,6 @@ def foobar
 	else sum = firstnum + secondnum
 		"сумма двух чисел равна #{sum}"
 	end
-
 end
-
 puts "ведите через Enter два числа"
-
-puts foobar
+foobar
