@@ -14,7 +14,6 @@ RSpec.describe "Greeting" do
 		allow_any_instance_of(Kernel).to receive(:gets).and_return('Nadezhda','Glinova', "12")
 
 		expect(greeting).to eq("Привет,Glinova Nadezhda.Тебе меньше 18, но начать учиться программировать никогда не рано!")
-
 	end
 
 	it "return age equal to 18" do
@@ -27,20 +26,17 @@ RSpec.describe "Greeting" do
 		allow_any_instance_of(Kernel).to receive(:gets).and_return('Nadezhda','Glinova', "0")
 
 		expect(greeting).to eq("Введите другой возраст")
-
 	end
 
 	it "return text age" do
 		allow_any_instance_of(Kernel).to receive(:gets).and_return('Nadezhda','Glinova', 'twenty')
 
 		expect(greeting).to eq("Введите другой возраст")
-
 	end
 
 	it "return negative age" do
 		allow_any_instance_of(Kernel).to receive(:gets).and_return('Nadezhda','Glinova', "-21")
 
 		expect(greeting).to eq("Введите другой возраст")
-
 	end
 end
