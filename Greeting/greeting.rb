@@ -15,7 +15,4 @@ end
 
 puts "Введите ваше имя, фамилию и возраст"
 
-puts greeting
-
-
-
+greeting
