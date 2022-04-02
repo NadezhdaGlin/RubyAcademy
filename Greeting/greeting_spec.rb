@@ -40,3 +40,4 @@ RSpec.describe "Greeting" do
 		expect(greeting).to eq("Введите другой возраст")
 	end
 end
+
