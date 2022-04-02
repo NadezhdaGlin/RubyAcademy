@@ -13,9 +13,9 @@ def whos_that_pokemon
 	end
 
 	"Вот твои введенные покемоны: #{array}"
-
 end
 
 puts "Сколько добавить покемонов?"
 
-puts whos_that_pokemon
+whos_that_pokemon
+
