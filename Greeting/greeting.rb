@@ -10,6 +10,5 @@ def greeting
 	else 
 		"Введите другой возраст"
 	end
-
 end
 
