@@ -9,5 +9,3 @@ def word_ending_check
 	end
 end
 
-puts "Введите слово"
-
