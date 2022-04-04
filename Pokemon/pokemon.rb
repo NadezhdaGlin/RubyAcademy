@@ -13,5 +13,3 @@ end
 
 puts "Сколько добавить покемонов?"
 
-whos_that_pokemon
-
