@@ -5,15 +5,15 @@ FOR_TEST = File.basename("/Files_methods/for_tests.txt")
 
 RSpec.describe "File methods" do
 
-	let (:string) do
-		<<-String
-Jinx
-Seraphine
-Lux
-Katarine
-Seraphine
-Sona
-		String
+let (:string) do
+<<-String
+	Jinx
+	Seraphine
+	Lux
+	Katarine
+	Seraphine
+	Sona
+String
 	end
 
 	before {File.write(FOR_TEST, string)}
@@ -33,14 +33,6 @@ Sona
 	end
 
 	let (:string_upd) do
-# 		<<-String
-# Jinx
-# Seraphine
-# Timo
-# Katarine
-# Seraphine
-# Sona
-# 		String
 		$string_upd = Array.new
 		$string_upd = ["Jinx", "Seraphine", "Timo", "Katarine", "Seraphine", "Sona"]
 	end
@@ -51,9 +43,6 @@ Sona
 		id = 2
 		name = "Timo"
 		expect{update(id, name)}.to output(string_upd).to_stdout
-	end
-
-	
-	
-	
+	end	
 end
+
