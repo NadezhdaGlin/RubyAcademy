@@ -15,9 +15,8 @@ def find(id)
 end
 
 def where(name)
-
+	
 	array = Array.new
-
 	File.foreach(FILE).with_index do |character, index|
 		array << index if character.include?(name)
  	end
@@ -27,19 +26,14 @@ def where(name)
  def update(id, name)
 
  	array = Array.new
-
  	File.foreach(FILE).with_index do |character, index|
  		 array << (index == id ? name.chomp : character.chomp)
  	end
-
- 	# File.write(BUF, array.join("\n"))
-
  end
 
 def delete(id)
-
+	
 	array = Array.new
-
 	file = File.open("Characters.txt")
 
 	file_data = file.readlines.map { |character| character.chomp }
@@ -52,10 +46,4 @@ def delete(id)
 	File.write(DEL, file_data.join("\n"))
 
 end
-
-# puts index
-# puts find(1)
-puts where("Seraphine")
-# update(2, "Umi")
-# puts delete(2)
 
