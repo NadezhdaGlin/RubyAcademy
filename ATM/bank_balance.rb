@@ -62,12 +62,12 @@ def ATM(balance)
 	end
 end
 
-flag = false
+file_exist = false
 if File.exist?('balance.txt')
-	flag = true
+	file_exist = true
 	balance = File.read('balance.txt')
 	ATM(balance)
-else !flag
+else !file_exist
 	BALANCE = 100.0
 	ATM(BALANCE)
 end
