@@ -25,8 +25,7 @@ RSpec.describe "Searching two last symbol'cs'" do
 	it "returns word with spaces at the end" do
 		allow_any_instance_of(Kernel).to receive(:gets).and_return("   geombinatoriCS      ")
 
-		expect(word_ending_check).to eq(16384)
-	
+		expect(word_ending_check).to eq(16384)	
 	end
 
 	it "returns not word" do
@@ -39,15 +38,12 @@ RSpec.describe "Searching two last symbol'cs'" do
 		allow_any_instance_of(Kernel).to receive(:gets).and_return("froCSog")
 
 		expect(word_ending_check).to eq("goSCorf")
-
 	end
 
 	it "returns word with a number in front" do
 		allow_any_instance_of(Kernel).to receive(:gets).and_return("-1CS")
 
-		expect(word_ending_check).to eq(16)
-	
+		expect(word_ending_check).to eq(16)	
 	end
-
 end
- 
+
