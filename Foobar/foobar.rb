@@ -10,5 +10,4 @@ def foobar
 		"сумма двух чисел равна #{sum}"
 	end
 end
-puts "ведите через Enter два числа"
 
