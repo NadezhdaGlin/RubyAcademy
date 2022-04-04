@@ -1,4 +1,3 @@
-# require ''
 FILE = File.basename("/Files_methods/Characters.txt")
 BUF = File.basename("/Files_methods/Update_Characters.txt")
 DEL = File.basename("/Files_methods/Delete_Characters.txt")
@@ -44,6 +43,5 @@ def delete(id)
 
 	file.close
 	File.write(DEL, file_data.join("\n"))
-
 end
 
