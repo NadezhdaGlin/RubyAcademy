@@ -11,5 +11,4 @@ def foobar
 	end
 end
 puts "ведите через Enter два числа"
-foobar
 
