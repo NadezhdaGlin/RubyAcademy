@@ -11,5 +11,3 @@ end
 
 puts "Введите слово"
 
-word_ending_check
-
